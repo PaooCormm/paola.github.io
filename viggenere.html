@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>viggenere</title>
+</head>
+<body>
+    <center>
+        <div class="vigge">
+            <a id="Vigenere"></a>
+            <br><br>
+            <h1>Cifrado Vigenere</h2>
+                <br><br>
+                <p>Ingresa el texto que desea encriptar</p>
+                <br>
+                <textarea id="cad" placeholder="Texto a cifrar" onkeypress="return letras(event)" class="textarea"></textarea>
+                <br>
+                <input type="password" id="clv" placeholder="Ingrese una key (una clave)"  onkeypress="return letras(event)">
+                <br>
+                <input type="button" value="Cifrar" onclick="encriptarTextoClaro()" class="button button1">
+
+                <input type="button" value="Descifrar" onclick="desencriptarTextoClaro()" class="button button1">
+                <br>
+                <div id="resultado2"></div>
+                <p>Copie y pegue el mensaje encriptado y ahora de clic en "descifrar" para ver el mensaje, no cambie la Key que ingresó </p>
+                <br>
+                <a href="index.html" target="_self">Volver</a>
+                <script src="js/viggenere.js"></script>
+        </div>
+    </center>
+</body>
+</html>
